@@ -22,16 +22,22 @@ body {
 
 }
 
-joke-container {
-    /* Add your styles for the joke container here */
-    background-color: #FFF; /* For example, set the background color to white */
+.joke-container {
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF; 
     padding: 20px;
     border-radius: 10px;
     height: 25vh;
     width: 40vw;
     display: flex;
     margin-left: 800px;
-    margin-bottom: 300px;
+}
+
+.joke {
+    text-align: center; 
+    font-size: 24px; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button {
@@ -45,10 +51,13 @@ button {
     background: #8A2BE2;
     border: none;
     border-radius: 5px;
+    margin-top: 40px;
     margin-left: 400px;
+    margin-bottom: 200px;
     box-shadow: 2px 2px 20px 10px salmon;
     transition: background 0.5s ease;
 }
+
 
 button:hover {
     background: #FFA07A;

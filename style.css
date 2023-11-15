@@ -22,6 +22,18 @@ body {
 
 }
 
+joke-container {
+    /* Add your styles for the joke container here */
+    background-color: #FFF; /* For example, set the background color to white */
+    padding: 20px;
+    border-radius: 10px;
+    height: 25vh;
+    width: 40vw;
+    display: flex;
+    margin-left: 800px;
+    margin-bottom: 300px;
+}
+
 button {
     cursor: pointer;
     outline: none;

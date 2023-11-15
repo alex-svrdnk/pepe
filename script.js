@@ -36,7 +36,8 @@ async function getJokes() {
             joke = `${data.joke}`;
         }
         jokeText.textContent = joke;
-        jokeContainer.style.display = 'block';
+        
+        // jokeContainer.style.display = 'block'; was needed before, now is unused
         tellMe(joke);
 
     } catch (error) {

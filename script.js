@@ -35,14 +35,28 @@ async function getJokes() {
         } else {
             joke = `${data.joke}`;
         }
-        jokeText.textContent = joke;
+
         
+        jokeText.textContent = joke;
         // jokeContainer.style.display = 'block'; was needed before, now is unused
+
+        // text-to-speech
         tellMe(joke);
+
+        // disable button
+        toggleButton();
 
     } catch (error) {
         console.log('as always,', error)
     }
 }
 
+// disable/enable button
+function toggleButton() {
+    playButton.disabled = !playButton.disabled;
+}
+
+
+// event listeners
 playButton.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleButton);
